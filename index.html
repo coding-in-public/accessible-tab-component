@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./main.js" type="module"></script>
+  <title>Custom Tab Component</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Steps for Learning WebDev</h1>
+    <article class="wrapper">
+      <h2>Step 1: Learn HTML</h2>
+      <div class="tabs-wrapper" data-direction="vertical" id="list1">
+        <div role="tablist" aria-label="Steps to Learn HTML">
+          <button role="tab" aria-controls="html-step1-tab" id="html-step1" aria-label="1.1 What is HTML?"
+            aria-selected="true">
+            1
+          </button>
+          <button role="tab" tabindex="-1" aria-controls="html-step2-tab" id="html-step2" aria-label="1.2 What is HTML?"
+            aria-selected="false">
+            2
+          </button>
+          <button role="tab" tabindex="-1" aria-controls="html-step3-tab" id="html-step3" aria-label="1.3 What is HTML?"
+            aria-selected="false">
+            3
+          </button>
+          <button role="tab" tabindex="-1" aria-controls="html-step4-tab" id="html-step4" aria-label="1.4 What is HTML?"
+            aria-selected="false">
+            4
+          </button>
+        </div>
+        <div role="tabpanel" aria-labelledby="html-step1" id="html-step1-tab" tabindex="0">
+          <h3>1.1 What is HTML?</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <a href="#" class="btn">Learn More</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+        </div>
+        <div role="tabpanel" aria-labelledby="html-step2" id="html-step2-tab" tabindex="0" hidden="true">
+          <h3>1.2 What is HTML?</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <a href="#" class="btn">Learn More</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+        </div>
+        <div role="tabpanel" aria-labelledby="html-step3" id="html-step3-tab" tabindex="0" hidden="true">
+          <h3>1.3 What is HTML?</h3>
+        
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <a href="#" class="btn">Learn More</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+            <a href="#" class="btn">Learn More</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+        </div>
+        <div role="tabpanel" aria-labelledby="html-step4" id="html-step4-tab" tabindex="0" hidden="true">
+          <h3>1.4 What is HTML?</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <a href="#" class="btn">Learn More</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+        </div>
+      </div>
+    </article>
+    <article class="wrapper">
+      <h2>Step 2: Learn CSS</h2>
+      <div class="tabs-wrapper" data-direction="horizontal" id="list2">
+        <div role="tablist" aria-label="Steps to Learn CSS">
+          <button role="tab" aria-controls="css-step1-tab" id="css-step1" aria-label="1.1 What is css?"
+            aria-selected="true">
+            Learn CSS
+          </button>
+          <button role="tab" tabindex="-1" aria-controls="css-step2-tab" id="css-step2" aria-label="1.2 What is css?"
+            aria-selected="false">
+            Cascade it!
+          </button>
+          <button role="tab" tabindex="-1" aria-controls="css-step3-tab" id="css-step3" aria-label="1.3 What is css?"
+            aria-selected="false">
+            CSS is here.
+          </button>
+        </div>
+        <div role="tabpanel" aria-labelledby="css-step1" id="css-step1-tab" tabindex="0">
+          <h3>2.1 What is css?</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <a href="#" class="btn">Learn More</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+        </div>
+        <div role="tabpanel" aria-labelledby="css-step2" id="css-step2-tab" tabindex="0" hidden="true">
+          <h3>2.2 What is css?</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <a href="#" class="btn">Learn More</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+        </div>
+        <div role="tabpanel" aria-labelledby="css-step3" id="css-step3-tab" tabindex="0" hidden="true">
+          <h3>2.3 What is css?</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+            <a href="#" class="btn">Learn More</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <a href="#" class="btn">Learn More</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi consequuntur deleniti animi quaerat
+            magnam. Reprehenderit ab dolor optio praesentium rerum inventore voluptas dolore labore consectetur
+            explicabo ratione ullam, excepturi ipsum neque quam molestiae quos quidem, rem quis laboriosam odit.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</body>
+
+</html>
