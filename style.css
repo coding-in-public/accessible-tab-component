@@ -100,3 +100,62 @@ p {
   color: hsl(var(--accent2));
   outline: none;
 }
+
+.tabs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.tabs-wrapper[data-direction="vertical"] {
+  flex-direction: row;
+}
+
+[role="tablist"]{
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.tabs-wrapper[data-direction="vertical"] [role="tablist"] {
+  flex-direction: column;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3px;
+}
+
+[role="tab"]{
+  background-color: hsl(var(--bkg));
+  border: .5rem outset hsl(var(--muted));
+  cursor: pointer;
+  font-size: var(--size5);
+  color: hsl(var(--muted));
+  font-family: inherit;
+  padding: .5rem 1.3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.tabs-wrapper[data-direction="vertical"] [role="tab"]{
+  height: var(--size3);
+  width: var(--size3);
+  padding: 0;
+}
+
+[role=tab]:is(:hover, :focus){
+  background-color: hsl(var(--accent1) / .6);
+  color: hsl(var(--bkg));
+}
+
+[role=tab][aria-selected="true"]{
+  background-color: hsl(var(--accent1));
+  border: .5rem inset hsl(var(--accent1));
+  color: hsl(var(--bkg));
+}
+
+[role=tabpanel]{
+  background-color: hsl(var(--bkg));
+  border: .5rem inset hsl(var(--accent1));
+  padding: var(--size4);
+}
