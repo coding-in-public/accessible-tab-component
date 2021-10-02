@@ -132,7 +132,9 @@ p {
   background-color: hsl(var(--bkg));
   border: .5rem outset hsl(var(--muted));
   cursor: pointer;
-  font-size: var(--size5);
+/*   font-size: var(--size5); */
+/*  This should probably be size4 (fixed below) */
+  font-size: var(--size4);
   color: hsl(var(--muted));
   font-family: inherit;
   padding: .5rem 1.3rem;
@@ -141,8 +143,11 @@ p {
 }
 
 .tabs-wrapper[data-direction="vertical"] [role="tab"] {
-  height: var(--size3);
-  width: var(--size3);
+/*   height: var(--size3); */
+/*   width: var(--size3); */
+/*  this should probably be size1 (fixed below) */
+  height: var(--size1);
+  width: var(--size1);
   padding: 0;
 }
 
