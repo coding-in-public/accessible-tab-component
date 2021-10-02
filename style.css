@@ -1,0 +1,102 @@
+*, *::after, *::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bkg: 40 100% 97%;
+  --text: 145 100% 6%;
+  --accent1: 145 46% 51%;
+  --accent2: 211 81% 48%;
+  --muted: 145 46% 65%;
+  
+  --size5: clamp(1rem, 0.68181828rem + 1.454545vw, 1.5rem);
+  --size4: clamp(1.3rem, 0.66363634rem + 2.909091vw, 2.3rem);
+  --size3: clamp(1.8rem, 0.90909097rem + 4.072727vw, 3.2rem);
+  --size2: clamp(2rem, 0.85454537rem + 5.236364vw, 3.8rem);
+  --size1: clamp(2.4rem, 1.06363634rem + 6.109091vw, 4.5rem);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
+body {
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(255, 250, 240,1)'/%3E%3Ccircle cx='5' cy='33' r='1' fill='rgba(43, 108, 176,1)'/%3E%3Ccircle cx='25' cy='7' r='1' fill='rgba(43, 108, 176,1)'/%3E%3Ccircle cx='5' cy='-7' r='1' fill='rgba(43, 108, 176,1)'/%3E%3Ccircle cx='25' cy='47' r='1' fill='rgba(43, 108, 176,1)'/%3E%3Ccircle cx='15' cy='20' r='1' fill='rgba(72, 187, 120,1)'/%3E%3Ccircle cx='35' cy='20' r='1' fill='rgba(72, 187, 120,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: hsl(var(--text));
+  padding: var(--size1) var(--size4);
+}
+
+.container {
+  display: grid;
+  gap: var(--size3);
+  max-width: 1200px;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+h1, h3 {
+  color: hsl(var(--accent2));
+  line-height: 1.1;
+  margin-bottom: .8em;
+}
+
+h1 {
+  background-color: hsl(var(--bkg));
+  text-align: center;
+  font-size: var(--size1);
+  padding: 1.2rem 2rem;
+  line-height: 1;
+  margin: 0 auto 1rem;
+  border: .5rem outset hsl(var(--accent2));
+}
+
+h2 {
+  background-color: hsl(var(--bkg));
+  font-size: var(--size4);
+  color: hsl(var(--accent1));
+  padding: 1.2rem 2rem;
+  line-height: 1;
+  margin-bottom: .2rem;
+  width: max-content;
+  border: .5rem outset hsl(var(--accent1));
+}
+
+h3 {
+  font-size: var(--size5);
+}
+
+* + h3 {
+  margin-top: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.btn:is(:active, :link, :visited){
+  display: inline-block;
+  background-color: hsl(var(--accent2));
+  color: hsl(var(--bkg));
+  font-size: var(--size5);
+  margin-bottom: 1rem;
+  padding: .6rem 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 9px solid transparent;
+  transition: all 250ms ease-in-out;
+}
+
+.btn:is(:hover, :focus){
+  border: 9px solid hsl(var(--accent2));
+  background-color: hsl(var(--bkg));
+  color: hsl(var(--accent2));
+  outline: none;
+}
